@@ -20,7 +20,7 @@ for (let i = 0; i < click.length; i ++) {
 
          if(id == mas[0]) {
 
-         document.location.href = "https://andrey-berlin.github.io/FrontEndBackEndResurs/";
+         document.location.href = "https://andrey-berlin-blogger.github.io/start-programming/";
 
 
         } /*else if (id == 2) {
