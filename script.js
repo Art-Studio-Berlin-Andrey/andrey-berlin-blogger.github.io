@@ -23,12 +23,12 @@ for (let i = 0; i < click.length; i ++) {
          document.location.href = "https://andrey-berlin-blogger.github.io/start-programming/";
 
 
-        } /*else if (id == 2) {
+        } else if (id == mas[1]) {
+
+         document.location.href = "https://andrey-berlin-blogger.github.io/computer-architecture/";
 
 
-
-
-        }*/
+        }
 
       }
 
