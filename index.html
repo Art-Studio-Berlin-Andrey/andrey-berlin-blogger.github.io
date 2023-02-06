@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    
+<!--Цвет фона-->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">&#127912</button>
+            <div id="myDropdown" class="dropdown-content">
+                <hr>
+                <input type="color" id="outBackground" name="favcolor" value="#DEB887">
+                <hr>
+
+                <button type="button" onclick="createBodyBackground()">OK</button>
+                <hr>
+            </div>
+          </div>
+        
+
+        
+<!--Ввод Текста-->
+            <div class="dropdown1">
+                <button onclick="myFunction1()" class="dropbtn1">&#128221</button>
+                <div id="myDropdown1" class="dropdown-content1">
+                     <hr>
+                    <textarea type='text' id="text" style="width:300px; height:200px;">
+
+
+                    </textarea> 
+                     <hr>
+                     <button type="button" onclick="createText()">OK.....</button>
+                     <hr>
+                     
+                </div>
+              </div>
+
+
+
+        
+  <!--Размер Текста-->      
+
+            <div class="dropdown2">
+                <button onclick="myFunction2()" class="dropbtn2">🗚</button>
+                <div id="myDropdown2" class="dropdown-content2">
+                   <hr>
+                    <input type="range" min="0" name="a" max="200" value="10" step="10" id="font size" >
+                   <hr>
+                    <button type="button" onclick="createText()">OK</button>
+                   <hr> 
+                </div>
+              </div>
+
+
+        
+  <!--Цвет Текста-->
+
+            <div class="dropdown3">
+            <button onclick="myFunction3()" class="dropbtn3">&#127912T</button>
+            <div id="myDropdown3" class="dropdown-content3">
+               <hr>
+              <input type="color" id="colorText" name="favcolor" value="#000">
+               <hr>
+               <button type="button" onclick="createText()">OK....</button>
+               <hr>
+            </div>
+          </div>
+        
+        
+
+</header>
+<section id = "section">
+<div id ="out">
+
+<p id="inText"></p>
+ 
+
+</div>
+
+</section>
+<footer>
+    
+
+
+</footer>
+    
+
+
+    
+</body>
+<script src="script.js">
+
+</script>
+</html>
