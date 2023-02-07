@@ -134,3 +134,37 @@ function createText() {
 
 
 }
+
+let saveFile = document.getElementById('save');
+saveFile.onclick = download;
+
+function download() {
+    var link = document.createElement('a');
+    var str = document.getElementById("text").value;
+    str = str.split("\u000A").join("\u000D\u000A");
+    bl = new Blob([str]);
+    link.href = URL.createObjectURL(bl);
+    if (document.getElementById("text").name != "") {
+        link.download = document.getElementById("text").name;
+    } else {
+        link.download = "text.txt";
+    }
+    var e = new MouseEvent("click");
+    link.dispatchEvent(e);
+}
+//Открыть файл
+let text1 = document.getElementById('text1');
+text1.onchange = function() { readfile(this.files) };
+
+function readfile(files) {
+    var text = files[0];
+    document.getElementById("text1").name = text.name;
+    console.dir(text);
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById("text").value = e.target.result;
+    };
+    reader.readAsText(text);
+}
+
+
