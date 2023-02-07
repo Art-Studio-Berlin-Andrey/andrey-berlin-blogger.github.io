@@ -27,6 +27,12 @@ function myFunction3() {
 	
  }
 
+function myFunction4() {
+  
+  document.getElementById("myDropdown4").classList.toggle("show4");
+	  
+ }
+
 
 
   
@@ -90,6 +96,20 @@ toggle between hiding and showing the dropdown content */
   
 		if (!openDropdown3.classList.contains('show3')) {
 			openDropdown3.classList.remove('show3');
+		  }
+		}
+	  }
+	  
+	  
+	   if (!event.target.matches('.dropbtn4')) {
+		var dropdowns4 = document.getElementsByClassName("dropdown-content4");
+		var i;
+		for (i = 0; i < dropdowns4.length; i++) {
+		  var openDropdown4 = dropdowns4[i];
+  
+  
+		if (!openDropdown4.classList.contains('show4')) {
+			openDropdown4.classList.remove('show4');
 		  }
 		}
 	  }
